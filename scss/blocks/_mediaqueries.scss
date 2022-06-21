@@ -6,6 +6,7 @@
     }
 
     .hero__wrapper {
+        padding-bottom: 300px;
         margin-right: auto;
         margin-left: auto;
         display: flex;
@@ -25,7 +26,7 @@
         content: "";
         display: inline-block;
         position: absolute;
-        top: calc(50% + 320px);
+        top: calc(50% + 350px);
         left: calc(50% - 510px);
         width: 450px;
         height: 150px;
