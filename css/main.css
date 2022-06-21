@@ -526,6 +526,9 @@ a {
   display: none !important;
 }
 
+.hero {
+  margin-bottom: 160px;
+}
 .hero__container {
   max-width: 1440px;
   width: 100%;
@@ -544,7 +547,7 @@ a {
   max-width: 500px;
   width: 100%;
   padding-top: 153px;
-  padding-bottom: 385px;
+  padding-bottom: 152px;
 }
 .hero__inner__wrapper {
   margin-left: 95px;

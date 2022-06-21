@@ -1,5 +1,6 @@
 .hero {
 
+    margin-bottom: 160px;
 
     &__container {
         max-width: 1440px;
@@ -22,7 +23,7 @@
         max-width: 500px;
         width: 100%;
         padding-top: 153px;
-        padding-bottom: 385px;
+        padding-bottom: 152px;
     }
 
     &__inner__wrapper {
@@ -63,11 +64,11 @@
         content: "";
         display: inline-block;
         position: absolute;
-        left:calc(100% + 40px);
+        left: calc(100% + 40px);
         top: 50%;
         width: 450px;
         height: 150px;
-        background: url("./../../images/hero-arrow.svg") no-repeat; 
+        background: url("./../../images/hero-arrow.svg") no-repeat;
     }
 
 
