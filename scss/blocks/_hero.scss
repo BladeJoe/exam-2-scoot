@@ -1,0 +1,75 @@
+.hero {
+
+
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        background-image: url("./../images/hero-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    &__inner-container {
+        max-width: 1110px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        padding-top: 153px;
+        padding-bottom: 385px;
+    }
+
+    &__inner__wrapper {
+
+        margin-left: 95px;
+    }
+
+    &__heading {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        position: relative;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    &__text::before {
+        content: "";
+        width: 50px;
+        display: inline-block;
+        position: absolute;
+        right: calc(100% + 57px);
+        top: 50%;
+        width: 10000px;
+        height: 15px;
+        background: #FCB72B;
+        background-image: url("./../../images/hero-left-arrow.svg");
+    }
+
+    &__text::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left:calc(100% + 40px);
+        top: 50%;
+        width: 450px;
+        height: 150px;
+        background: url("./../../images/hero-arrow.svg") no-repeat; 
+    }
+
+
+
+}

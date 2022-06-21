@@ -1,0 +1,53 @@
+@media only screen and (max-width:700px) {
+
+    .nav,
+    .header-btn {
+        display: none;
+    }
+
+    .label {
+        display: inline-block;
+    }
+
+    .burger {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        width: 18px;
+        height: 18px;
+        background-image: url("./../images/nav-burger.svg");
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        left: 5%;
+
+    }
+
+    .menu-checkbox:checked~.nav-mobile {
+        display: flex;
+    }
+
+    .menu-checkbox:checked~.burger {
+        background-image: url("./../images/cross.svg");
+    }
+
+
+
+    .header__container {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+
+    .hero__text::after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:333px) {
+    .button {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
