@@ -48,8 +48,7 @@
     }
 
     &__text::before {
-        content: "";
-        width: 50px;
+        content: ""; 
         display: inline-block;
         position: absolute;
         right: calc(100% + 57px);

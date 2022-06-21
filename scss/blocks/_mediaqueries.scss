@@ -1,3 +1,57 @@
+@media only screen and (max-width:1100px) {
+    .step__conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .step-list {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &__item {
+            max-width: 573px;
+        }
+
+        &__item__wrapper {
+            padding-left: 100px;
+        }
+
+        &__item__wrapper::after {
+            position: absolute;
+            left: calc(50% - 560px);
+            transform: rotate(90deg) translate(-50%, -50%);
+        }
+
+        &__item__wrapper::before {
+            position: absolute;
+            left: calc(50% - 360px);
+        }
+
+        .step1::before {
+            background-image: url("./../../images/li-1.svg");
+        }
+
+        .step2::before {
+            background-image: url("./../../images/li-2.svg");
+        }
+
+        .step3::before {
+            background-image: url("./../../images/li-3.svg");
+        }
+
+
+
+    }
+
+
+}
+
 @media only screen and (max-width:768px) {
 
     .hero__text::after,
@@ -31,6 +85,51 @@
         width: 450px;
         height: 150px;
         background: url("./../../images/hero-arrow.svg") no-repeat;
+    }
+
+
+    .step-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 311px;
+            width: 100%;
+            margin-bottom: 48px;
+            padding-top: 80px;
+            &__heading {
+                font-size: 20px;
+                line-height: 28px;
+
+            }
+        }
+
+        &__item__wrapper {
+            padding: 0;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__item__wrapper::after {
+            @include none;
+        }
+
+        &__item__wrapper::before {
+            width: 56px;
+            height: 56px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: 50%;
+        }
     }
 }
 
@@ -80,8 +179,8 @@
         line-height: 40px;
     }
 
-    .hero__container{
-        
+    .hero__container {
+
         background-image: url("./../../images/hero-mobile.jpg");
     }
 
