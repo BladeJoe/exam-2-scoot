@@ -1,5 +1,6 @@
 .telemetry {
     margin-bottom: 200px;
+
     &-list {
         display: flex;
         flex-direction: column;
@@ -17,7 +18,7 @@
             content: url("./../../images/telemetry-arrow-right.svg");
             left: calc(0% - 550px);
             top: 0;
-                }
+        }
 
         &__item:nth-child(2n) .telemetry__right__wrapper {
 
