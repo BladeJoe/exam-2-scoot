@@ -405,6 +405,10 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
   background-color: #495567;
+  background-image: url("./../images/circles.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 150px) calc(100% + 170px);
+  background-size: contain;
 }
 .app__container {
   display: flex;
