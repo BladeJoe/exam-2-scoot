@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    height: 100%;
+   overflow-x: hidden;
 }
 
 *,
@@ -16,14 +16,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     display: flex;
+    height: 100vh;
     justify-content: space-between;
     flex-direction: column;
+    align-items: stretch;
 }
 
 main {
-    flex-grow: 1;
+    flex-grow: 1; 
     margin-top: 77px;
-    height: 100%;
 }
 
 img {
@@ -46,6 +47,7 @@ h6 {
     margin: 0;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    color: black;
 }
 
 p {
@@ -54,7 +56,7 @@ p {
 
 a {
     text-decoration: none;
-
+    color: black;
 }
 a:hover{
     color: $yellow;

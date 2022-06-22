@@ -30,7 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 *,
@@ -46,14 +46,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   display: flex;
+  height: 100vh;
   justify-content: space-between;
   flex-direction: column;
+  align-items: stretch;
 }
 
 main {
   flex-grow: 1;
   margin-top: 77px;
-  height: 100%;
 }
 
 img {
@@ -76,6 +77,7 @@ h6 {
   margin: 0;
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  color: black;
 }
 
 p {
@@ -84,6 +86,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -468,6 +471,54 @@ a:hover {
   color: #495567;
 }
 
+.footer {
+  background-color: #333A44;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  z-index: 99;
+}
+.footer__container {
+  padding-top: 32px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-logo {
+  margin-right: 28px;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 250px;
+  width: 100%;
+}
+.nav-footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+}
+.nav-footer__list__item__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.footer-link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
 @media only screen and (max-width: 1100px) {
   .step__conteiner {
     display: flex;
@@ -724,6 +775,32 @@ a:hover {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 600px) {
+  .footer__container {
+    padding-top: 64px;
+    padding-bottom: 88px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    margin-right: 0;
+    margin-bottom: 41px;
+  }
+
+  .nav-footer {
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-footer__list {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 85px;
+  }
+
+  .footer-link-list {
+    max-width: 120px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .telemetry__left {
     max-width: 445px;
@@ -823,5 +900,10 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url("./../images/hero-bg@2x.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

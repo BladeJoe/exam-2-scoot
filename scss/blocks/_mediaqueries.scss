@@ -319,6 +319,42 @@
 
 }
 
+@media only screen and (max-width:600px) {
+
+    .footer {
+
+        &__container {
+            padding-top: 64px;
+            padding-bottom: 88px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-logo {
+            margin-right: 0;
+            margin-bottom: 41px;
+        }
+    }
+
+    .nav-footer {
+        align-items: center;
+        flex-direction: column;
+
+        &__list {
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 85px;
+
+        }
+    }
+
+    .footer-link-list {
+        max-width: 120px;
+    }
+
+
+}
+
 @media only screen and (max-width:500px) {
 
     .telemetry__left {
@@ -445,10 +481,22 @@
         font-size: 15px;
         line-height: 25px;
     }
-    
+
     .app__wrapper {
         display: flex;
-        flex-wrap: wrap; 
-    flex-direction: column;
-        }
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .hero__container {
+        background-image: url("./../images/hero-bg@2x.jpg");
+    }
 }
