@@ -15,7 +15,7 @@
         }
 
         &__item:nth-child(2n) .telemetry__right__wrapper::before {
-            content: url("./../../images/telemetry-arrow-right.svg");
+            content: url("./../images/telemetry-arrow-right.svg");
             left: calc(0% - 550px);
             top: 0;
         }
@@ -79,7 +79,7 @@
         }
 
         &__wrapper::before {
-            content: url("./../../images/telemetry-arrow-left.svg");
+            content: url("./../images/telemetry-arrow-left.svg");
             display: inline-block;
             position: absolute;
             left: calc(50% - 350px);

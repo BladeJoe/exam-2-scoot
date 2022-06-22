@@ -56,7 +56,7 @@
         width: 10000px;
         height: 15px;
         background: $yellow;
-        background-image: url("./../../images/hero-left-arrow.svg");
+        background-image: url("./../images/hero-left-arrow.svg");
     }
 
     &__text::after {
@@ -67,7 +67,7 @@
         top: 50%;
         width: 450px;
         height: 150px;
-        background: url("./../../images/hero-arrow.svg") no-repeat;
+        background: url("./../images/hero-arrow.svg") no-repeat;
     }
 
 

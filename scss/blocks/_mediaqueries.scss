@@ -34,15 +34,15 @@
         }
 
         .step1::before {
-            background-image: url("./../../images/li-1.svg");
+            background-image: url("./../images/li-1.svg");
         }
 
         .step2::before {
-            background-image: url("./../../images/li-2.svg");
+            background-image: url("./../images/li-2.svg");
         }
 
         .step3::before {
-            background-image: url("./../../images/li-3.svg");
+            background-image: url("./../images/li-3.svg");
         }
 
 
@@ -227,7 +227,7 @@
         left: calc(50% - 510px);
         width: 450px;
         height: 150px;
-        background: url("./../../images/hero-arrow.svg") no-repeat;
+        background: url("./../images/hero-arrow.svg") no-repeat;
     }
 
 
@@ -463,7 +463,7 @@
 
     .hero__container {
 
-        background-image: url("./../../images/hero-mobile.jpg");
+        background-image: url("./../images/hero-mobile.jpg");
     }
 
 

@@ -246,7 +246,7 @@ a:hover {
   width: 10000px;
   height: 15px;
   background: #FCB72B;
-  background-image: url("./../../images/hero-left-arrow.svg");
+  background-image: url("./../images/hero-left-arrow.svg");
 }
 .hero__text::after {
   content: "";
@@ -256,7 +256,7 @@ a:hover {
   top: 50%;
   width: 450px;
   height: 150px;
-  background: url("./../../images/hero-arrow.svg") no-repeat;
+  background: url("./../images/hero-arrow.svg") no-repeat;
 }
 
 .step {
@@ -301,13 +301,13 @@ a:hover {
   background-repeat: no-repeat;
 }
 .step-list .step1::before {
-  background-image: url("./../../images/li-1.svg");
+  background-image: url("./../images/li-1.svg");
 }
 .step-list .step2::before {
-  background-image: url("./../../images/li-2.svg");
+  background-image: url("./../images/li-2.svg");
 }
 .step-list .step3::before {
-  background-image: url("./../../images/li-3.svg");
+  background-image: url("./../images/li-3.svg");
 }
 .step-list__item {
   margin-bottom: 40px;
@@ -341,7 +341,7 @@ a:hover {
   flex-direction: row;
 }
 .telemetry-list__item:nth-child(2n) .telemetry__right__wrapper::before {
-  content: url("./../../images/telemetry-arrow-right.svg");
+  content: url("./../images/telemetry-arrow-right.svg");
   left: calc(0% - 550px);
   top: 0;
 }
@@ -390,7 +390,7 @@ a:hover {
   border-radius: 50%;
 }
 .telemetry__right__wrapper::before {
-  content: url("./../../images/telemetry-arrow-left.svg");
+  content: url("./../images/telemetry-arrow-left.svg");
   display: inline-block;
   position: absolute;
   left: calc(50% - 350px);
@@ -556,13 +556,13 @@ a:hover {
     left: calc(50% - 360px);
   }
   .step-list .step1::before {
-    background-image: url("./../../images/li-1.svg");
+    background-image: url("./../images/li-1.svg");
   }
   .step-list .step2::before {
-    background-image: url("./../../images/li-2.svg");
+    background-image: url("./../images/li-2.svg");
   }
   .step-list .step3::before {
-    background-image: url("./../../images/li-3.svg");
+    background-image: url("./../images/li-3.svg");
   }
 }
 @media only screen and (max-width: 950px) {
@@ -705,7 +705,7 @@ a:hover {
     left: calc(50% - 510px);
     width: 450px;
     height: 150px;
-    background: url("./../../images/hero-arrow.svg") no-repeat;
+    background: url("./../images/hero-arrow.svg") no-repeat;
   }
 
   .step-list {
@@ -887,7 +887,7 @@ a:hover {
   }
 
   .hero__container {
-    background-image: url("./../../images/hero-mobile.jpg");
+    background-image: url("./../images/hero-mobile.jpg");
   }
 
   .telemetry__right__wrapper::before {
