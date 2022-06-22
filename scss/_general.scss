@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 *,
@@ -22,6 +23,7 @@ body {
 main {
     flex-grow: 1;
     margin-top: 77px;
+    height: 100%;
 }
 
 img {
@@ -45,9 +47,11 @@ h6 {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
 }
-p{
+
+p {
     margin: 0;
 }
+
 a {
     text-decoration: none;
 

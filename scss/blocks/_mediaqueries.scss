@@ -52,6 +52,91 @@
 
 }
 
+@media only screen and (max-width:950px) {
+    .telemetry {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 150px;
+    
+            &__item {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            } 
+    
+        }
+    
+        &__left {
+            order: 1;
+        }
+    
+        &__left__heading {
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
+    
+        &__left-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+    
+        &__right {
+            max-width: 445px;
+    
+            &__wrapper {
+                border-radius: 50%;
+                width: 445px;
+                height: 445px;
+                position: relative;
+                box-shadow: 514px 0 0 0 #E5ECF4;
+    
+                &__img {
+                    position: absolute;
+                    width: 445px;
+                    height: 445px;
+                    border-radius: 50%;
+                }
+            }
+    
+            &__wrapper::before {
+                content: url("./../../images/telemetry-arrow-left.svg");
+                display: inline-block;
+                position: absolute;
+                left: calc(50% - 350px);
+                bottom: 0;
+                width: 741px;
+                height: 150px;
+                z-index: 5;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:768px) {
+
+
+    .telemetry {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            &__item {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:768px) {
 
     .hero__text::after,
@@ -104,6 +189,7 @@
             width: 100%;
             margin-bottom: 48px;
             padding-top: 80px;
+
             &__heading {
                 font-size: 20px;
                 line-height: 28px;
