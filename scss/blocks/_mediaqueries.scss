@@ -107,12 +107,12 @@
 
             &__item:nth-child(2n) .telemetry__right__wrapper {
 
-                box-shadow: -514px 0 0 0 #E5ECF4;
+                box-shadow: -514px 0 0 0 $lightGrey;
             }
 
             &__item:nth-child(2n + 1) .telemetry__right__wrapper {
 
-                box-shadow: 514px 0 0 0 #E5ECF4;
+                box-shadow: 514px 0 0 0 $lightGrey;
             }
 
             &__wrapper::before {
@@ -171,7 +171,7 @@
 @media only screen and (max-width:820px) {
 
     .app {
-        background-color: #495567;
+        background-color: $darkNavy;
 
         &__container {
             gap: 40px;
@@ -397,12 +397,12 @@
 
         &__item:nth-child(2n) .telemetry__right__wrapper {
 
-            box-shadow: -311px 0 0 0 #E5ECF4;
+            box-shadow: -311px 0 0 0 $lightGrey;
         }
 
         &__item:nth-child(2n + 1) .telemetry__right__wrapper {
 
-            box-shadow: 311px 0 0 0 #E5ECF4;
+            box-shadow: 311px 0 0 0 $lightGrey;
         }
     }
 }

@@ -24,7 +24,7 @@
         top: 0;
         width: 486px;
         height: 15px;
-        background-color: #E5ECF4;
+        background-color: $lightGrey;
         margin-top: 48px;
         transform: translate(-100%,-50%);
         z-index: -1;
@@ -38,7 +38,7 @@
         width: 96px;
         height: 96px;
         border-radius: 50%;
-        background: #FCB72B;
+        background: $yellow;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -61,14 +61,14 @@
         &__text {
             font-size: 15px;
             line-height: 25px;
-            color: #939CAA;
+            color: $dimGrey;
         }
 
         &__heading {
             font-size: 24px;
             line-height: 28px;
             letter-spacing: -1.07143px;
-            color: #495567;
+            color: $darkNavy;
             margin-bottom: 27px;
 
         }

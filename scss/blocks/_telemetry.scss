@@ -21,12 +21,12 @@
 
         &__item:nth-child(2n) .telemetry__right__wrapper {
 
-            box-shadow: -514px 0 0 0 #E5ECF4;
+            box-shadow: -514px 0 0 0 $lightGrey;
         }
 
         &__item:nth-child(2n + 1) .telemetry__right__wrapper {
 
-            box-shadow: 514px 0 0 0 #E5ECF4;
+            box-shadow: 514px 0 0 0 $lightGrey;
         }
 
         &__item:nth-child(2n) .telemetry__left {
@@ -49,13 +49,13 @@
             font-size: 48px;
             line-height: 48px;
             letter-spacing: -2.14286px;
-            color: #495567;
+            color: $darkNavy;
         }
 
         &-text {
             font-size: 15px;
             line-height: 25px;
-            color: #939CAA;
+            color: $dimGrey;
         }
     }
 
@@ -67,7 +67,7 @@
             width: 445px;
             height: 445px;
             position: relative;
-            box-shadow: 514px 0 0 0 #E5ECF4;
+            box-shadow: 514px 0 0 0 $lightGrey;
 
             &__img {
                 position: absolute;

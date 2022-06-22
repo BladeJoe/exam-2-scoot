@@ -1,5 +1,5 @@
 .button {
-    background-color: #FCB72B;
+    background-color: $yellow;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
@@ -11,8 +11,8 @@
 }
 
 .button:hover {
-    color: #FCB72B;
+    color: $yellow;
     background: #fff;
-    box-shadow: 0 0 0 3px #FCB72B inset;
+    box-shadow: 0 0 0 3px $yellow inset;
 
 }
