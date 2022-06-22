@@ -58,66 +58,72 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            align-items: center;
             gap: 150px;
-    
+
             &__item {
-                width: 100%;
+                max-width: 573px;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-            } 
-    
+            }
+
         }
-    
+
         &__left {
             order: 1;
+            max-width: 573px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
         }
-    
-        &__left__heading {
-            font-size: 48px;
-            line-height: 48px;
-            letter-spacing: -2.14286px;
-            color: #495567;
-        }
-    
-        &__left-text {
-            font-size: 15px;
-            line-height: 25px;
-            color: #939CAA;
-        }
-    
+
         &__right {
-            max-width: 445px;
-    
+            max-width: 573px;
+            margin-right: 0;
+            margin-bottom: 56px;
+
             &__wrapper {
                 border-radius: 50%;
-                width: 445px;
-                height: 445px;
+                margin-right: auto;
+                margin-left: auto;
                 position: relative;
-                box-shadow: 514px 0 0 0 #E5ECF4;
-    
+                display: flex;
+                justify-content: center;
+                box-shadow: none;
+
                 &__img {
                     position: absolute;
-                    width: 445px;
+                    align-self: center;
                     height: 445px;
                     border-radius: 50%;
                 }
+
+                &::before:first-of-type {
+                    top: 0;
+                }
             }
-    
+
+            &__item:nth-child(2n) .telemetry__right__wrapper {
+
+                box-shadow: -514px 0 0 0 #E5ECF4;
+            }
+
+            &__item:nth-child(2n + 1) .telemetry__right__wrapper {
+
+                box-shadow: 514px 0 0 0 #E5ECF4;
+            }
+
             &__wrapper::before {
-                content: url("./../../images/telemetry-arrow-left.svg");
-                display: inline-block;
-                position: absolute;
-                left: calc(50% - 350px);
-                bottom: 0;
-                width: 741px;
-                height: 150px;
-                z-index: 5;
+                top: 30%;
+                left: calc(100% - 100px);
             }
         }
     }
 
 }
+
 @media only screen and (max-width:768px) {
 
 
@@ -134,7 +140,59 @@
                 flex-direction: column;
             }
         }
+
+        &__right {
+            max-width: 573px;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 56px;
+
+            &__wrapper {
+                border-radius: 50%;
+                width: 445px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                box-shadow: none;
+
+                &__img {
+                    position: absolute;
+                    align-self: center;
+                    height: 445px;
+                    border-radius: 50%;
+                }
+
+
+            }
+        }
     }
+}
+
+@media only screen and (max-width:820px) {
+
+    .app {
+        background-color: #495567;
+
+        &__container {
+            gap: 40px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 12px;
+        }
+    }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -165,7 +223,7 @@
         content: "";
         display: inline-block;
         position: absolute;
-        top: calc(50% + 350px);
+        top: 80%;
         left: calc(50% - 510px);
         width: 450px;
         height: 150px;
@@ -257,6 +315,108 @@
         justify-content: center;
     }
 
+
+
+}
+
+@media only screen and (max-width:500px) {
+
+    .telemetry__left {
+        max-width: 445px;
+
+        &__heading {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 32px;
+        }
+
+        &-text {
+            margin-bottom: 32px;
+        }
+    }
+
+    .telemetry__right__wrapper {
+        max-height: 311px;
+        max-width: 311px;
+        height: 311px;
+        width: 100%;
+
+        &::before {
+            width: 398px;
+            height: 75px;
+        }
+
+        &__item:nth-child(2n) .telemetry__right__wrapper::before {
+            width: 398px;
+            height: auto;
+            top: 0;
+            left: calc(0% - 500px);
+        }
+
+        &__img {
+            height: auto;
+            max-width: 311px;
+            width: 100%;
+        }
+
+        &__item:nth-child(2n) .telemetry__right__wrapper {
+
+            box-shadow: -311px 0 0 0 #E5ECF4;
+        }
+
+        &__item:nth-child(2n + 1) .telemetry__right__wrapper {
+
+            box-shadow: 311px 0 0 0 #E5ECF4;
+        }
+    }
+}
+
+@media only screen and (max-width:460px) {
+
+    .app {
+
+
+
+        &__heading {
+            font-size: 32px;
+            line-height: 32px;
+            max-width: 290px;
+        }
+
+        .appstore {
+            max-width: 130px;
+            max-height: 40px;
+
+            &__text {
+
+                font-size: 8px;
+                line-height: 10px;
+            }
+
+            &__heading {
+                max-width: 415px;
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+
+        .googleplay {
+            max-width: 130px;
+            max-height: 40px;
+
+            &__text {
+
+                font-size: 8px;
+                line-height: 10px;
+            }
+
+            &__heading {
+                max-width: 415px;
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:430px) {
@@ -270,6 +430,14 @@
         background-image: url("./../../images/hero-mobile.jpg");
     }
 
+
+
+    .telemetry__right__wrapper::before {
+        top: 0;
+        left: calc(100% - 100px);
+    }
+
+
 }
 
 @media only screen and (max-width:333px) {
@@ -277,4 +445,10 @@
         font-size: 15px;
         line-height: 25px;
     }
+    
+    .app__wrapper {
+        display: flex;
+        flex-wrap: wrap; 
+    flex-direction: column;
+        }
 }

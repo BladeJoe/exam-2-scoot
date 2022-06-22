@@ -1,4 +1,5 @@
 .telemetry {
+    margin-bottom: 200px;
     &-list {
         display: flex;
         flex-direction: column;
@@ -14,12 +15,18 @@
 
         &__item:nth-child(2n) .telemetry__right__wrapper::before {
             content: url("./../../images/telemetry-arrow-right.svg");
-            left: calc(50% - 400px);
-        }
+            left: calc(0% - 550px);
+            top: 0;
+                }
 
         &__item:nth-child(2n) .telemetry__right__wrapper {
 
             box-shadow: -514px 0 0 0 #E5ECF4;
+        }
+
+        &__item:nth-child(2n + 1) .telemetry__right__wrapper {
+
+            box-shadow: 514px 0 0 0 #E5ECF4;
         }
 
         &__item:nth-child(2n) .telemetry__left {
@@ -37,19 +44,19 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-    }
 
-    &__left__heading {
-        font-size: 48px;
-        line-height: 48px;
-        letter-spacing: -2.14286px;
-        color: #495567;
-    }
+        &__heading {
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
 
-    &__left-text {
-        font-size: 15px;
-        line-height: 25px;
-        color: #939CAA;
+        &-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
     }
 
     &__right {
