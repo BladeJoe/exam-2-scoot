@@ -31,19 +31,7 @@
         &__item__wrapper::before {
             position: absolute;
             left: calc(50% - 360px);
-        }
-
-        .step1::before {
-            background-image: url("./../images/li-1.svg");
-        }
-
-        .step2::before {
-            background-image: url("./../images/li-2.svg");
-        }
-
-        .step3::before {
-            background-image: url("./../images/li-3.svg");
-        }
+        } 
 
 
 

@@ -555,15 +555,6 @@ a:hover {
     position: absolute;
     left: calc(50% - 360px);
   }
-  .step-list .step1::before {
-    background-image: url("./../images/li-1.svg");
-  }
-  .step-list .step2::before {
-    background-image: url("./../images/li-2.svg");
-  }
-  .step-list .step3::before {
-    background-image: url("./../images/li-3.svg");
-  }
 }
 @media only screen and (max-width: 950px) {
   .telemetry-list {
